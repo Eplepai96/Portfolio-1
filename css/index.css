@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Khula&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: rgba(172, 153, 101, 0.39);
+    --secondary-color: rgb(112, 30, 30);
+}
+
+h1, h2, h3 {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+h1, h2 {
+    padding: 30px 5px 0px;
+    font-size: 40px;
+}
+
+a, p {
+    font-family: 'Khula', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ .button {
+    padding: 3px;
+    border: 2px solid var(--secondary-color);
+    color: rgb(255, 255, 255);
+    background-color: var(--secondary-color);
+    transition: .2s ease-in-out 0s;
+ }
+
+ .button:hover {
+    background-color: white;
+    color: var(--secondary-color);
+    font-weight: 1000;
+    text-decoration: underline;
+ }
+
+.background-container {
+    background-color: var(--primary-color);
+}
+
+.background-container h2 {
+    text-align: center;
+}
+
+.info-container {
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.info-container p {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+    margin: 0px 30px;
+    border-bottom: 2px dotted var(--primary-color);
+}
+
+.portrait {
+    display: block;
+    margin: auto;
+    max-width: 70vw;
+    padding: 20px 1px;
+    border-bottom: 2px dotted var(--primary-color);
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.card-image {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 10px 1px;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 9px;
+}
+
+.card {
+    flex-basis: 300px;
+    display: block;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    padding: 7px;
+    border: 2px solid var(--secondary-color);
+    box-shadow: 2px 3px 2px rgb(68, 68, 68);
+}
+
+
+@media screen and (min-width: 700px){
+    .split-container {
+        display: flex;
+    }
+    .portrait {
+        margin: 5px;
+        max-width: 30vw;
+    }
+}
